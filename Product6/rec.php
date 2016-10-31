@@ -20,7 +20,7 @@
 	$list_log 	= mysql_query("SELECT * FROM `log` WHERE `user`='".$user_id."' ORDER BY `id` DESC ");
 	$item_log 		= mysql_fetch_array($list_log);
 	
-	if($item_log['step'] > 0 AND $item_log['step'] < 5)
+	if($item_log['step'] > 0 AND $item_log['step'] < 4)
 	{
 		if($text == 'Cancel')
 		{
