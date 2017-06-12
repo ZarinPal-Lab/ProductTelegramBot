@@ -37,8 +37,6 @@
 				$list_product 	= mysql_query("SELECT * FROM `product` WHERE `id`='".$item_log['product']."' ");
 				$item_product 		= mysql_fetch_array($list_product);
 				
-				if(substr($item_log['mobile'],0,2) == '93')
-				
 				if(substr($item_log['mobile'],0,2) == '90' OR substr($item_log['mobile'],0,2) == '93')
 					$type = 'MTN';
 				elseif(substr($item_log['mobile'],0,2) == '92')
